@@ -4,9 +4,8 @@
 }
 body {
     height: 100vh;
-    background-color: #2B807B;
-    text-align: center;
-    transition: transform .60s ease;
+    background: #2B807B;
+    transition: all .50s ease;
 }
 .centrar{
     display: flex;
@@ -16,11 +15,36 @@ body {
     justify-content: center;
     align-items: center;
 }
+    #ColorViejo{
+        left: 16%;
+    }
+    #ColorNuevo{
+        right: 16%;
+    }
+
+    .caja{
+        position: fixed;
+        width: 180px;
+        padding: 15px;
+        background-color: white;
+        border-radius: 30px;
+        text-align: center;
+        box-shadow: 0 0 30px white;
+        border: 2px solid white;
+
+        display: none;
+    }
+        .caja1{
+            top: 20vh;
+        }
+        .caja2{
+            top: 70vh;
+        }
 
 #contenedor{
     padding: 20px;
-    min-height: 30%;
-    min-width: 40%;
+    min-height: 5%;
+    min-width: 10%;
     background-color: white;
     border-radius: 30px;
     box-shadow: 0 0 30px white;
@@ -31,17 +55,6 @@ body {
         transform: translateY(-8px);
         box-shadow: 0 0 20px white;
     }
-#color{
-    color: #2B807B;
-    font-size: 40px;
-    font-style: oblique;
-}
-#coloor{
-    font-size: 25px;
-    font-weight: bold;
-    color: #2B807B;
-}
-
 #botoncolor{
     padding: 10px;
     text-decoration: none;
